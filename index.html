@@ -1,0 +1,46 @@
+<DOCTYPE HTML>
+  <html lang = "en">
+    <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+      <link rel = "stylesheet" href = "assignment.css"/>
+      <title>Login</title>
+    </head>
+  
+    <body>
+      <div id = "container">
+        <div id="header" class="row">
+            <h3 class="my-4" >Login</h3>
+        </div>
+        
+        <div class = 'row'>
+  
+          <div class = 'col-12'>
+   
+            <!--Making form for logging in-->
+            <form id = 'formCheck' method = "POST" action="/insertDetails">
+              <div class = 'form-group row'>
+                <label for="username" class='col-2 col-form-label'>Staff ID</label>
+                <input id='username' name='username' type="text" class="form-control col-3" placeholder = "Enter ID">
+              </div>
+
+              <div class = 'form-group row'>
+                <label for="password" class='col-2 col-form-label'>Password</label>
+                <input id='password' name='password' type="password" class="form-control col-3" placeholder = "Enter Password">
+              </div>
+              
+              <!--Button to submit info-->
+              <div class='form-group row'>
+                <div class='col-4 '>
+                    <button id='btnSubmit' class = "colorChange" type='submit' class='btn btn-primary w-50 float-right'><span>Login</span></button>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+      <script src="index.js"></script>
+    </body>
+  </html>

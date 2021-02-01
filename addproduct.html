@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<lang eng>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" type = "text/css" href = "assignment.css"/>
+        <title>Add New Product</title>
+    </head>
+    <body>
+
+        <!--href links to transfer from html pages-->
+        <nav id='addprodnav' class='navbar navbar-light bg-light'>
+          <a href = "/productChecker">Return</a>
+        </nav>
+        <div id="container">
+            <div id="header" class="row">
+                <h3 class="my-4">Add New Product</h3>
+            </div>
+            <div class = 'row'>
+              <div class = 'col-12'>
+
+                <!--Form for adding a product-->
+                <form id = 'newProductCheck' method = "POST" action = "/addProduct">
+                  <div class = 'form'>
+                    <div class = 'form-group row'>
+                      <label for="NewPName" class='col-2 col-form-label'>Enter Shoe Name</label>
+                      <input id='NewPName' name='NewPName' type="text" class="form-control col-3" placeholder = "Enter Product Name">
+                    </div>
+                    <div class = 'form-group row'>
+                      <label for="NewPSize" class='col-2 col-form-label'>Enter Shoe Size</label>
+                      <input id='NewPSize' name='NewPSize' type="text" class="form-control col-3" placeholder = "Enter Product Size">
+                    </div>
+                    <div class = 'form-group row'>
+                        <label for="NewPQuan" class='col-2 col-form-label'>Enter Product Quantity</label>
+                        <input id='NewPQuan' name='NewPQuan' type="text" class="form-control col-3" placeholder = "Enter Quantity">
+                    </div>
+
+                    <div id = "result"></div>
+
+                    <!--Button to submit info-->
+                    <div class='form-group row'>
+                      <div class='col-4 '>
+                          <button id='AddProdEnter' class = "colorChange" type='submit' class='btn btn-primary w-50 float-right'><span>Enter</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </body>
+      </html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+      <script src="addproduct.js"></script>
+    </body>
+</html>
